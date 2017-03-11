@@ -3,16 +3,15 @@ package com.sdajava.Points;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListOfRandom {
+public class ListOfRandom extends RandomizePoints{
 
     public List<RandomPoints> pointsList = new ArrayList<>();
 
-     RandomizePoints randomizePoints = new RandomizePoints();
 
-   // public void addPoint() {
-    //    RandomPoints p1 = randomizePoints.randomSet();
-      //  pointsList.add(p1);
-  //  }
+     public void addPoint() {
+        RandomPoints p1 = this.randomSet();
+        pointsList.add(p1);
+     }
 
     public void showValue(){
         for(RandomPoints q: pointsList){
@@ -21,6 +20,7 @@ public class ListOfRandom {
 
     }
 
-
-
+    public List<RandomPoints> getPointsList() {
+        return pointsList;
+    }
 }

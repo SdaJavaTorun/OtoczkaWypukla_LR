@@ -1,7 +1,6 @@
 package com.sdajava.Points;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class AlgorithmOfGraham {
 
@@ -16,7 +15,7 @@ public class AlgorithmOfGraham {
                                                     .map(RandomPoints::getR)
                                                     .mapToDouble(Double::doubleValue).summaryStatistics();
 
-        System.out.println(stat.getMin());
+        System.out.println("Minimalna wartosc: " + stat.getMin());
 
 
     }
