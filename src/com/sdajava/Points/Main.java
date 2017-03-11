@@ -8,10 +8,16 @@ public class Main {
         randomizePoints.randomSet();
 
         ListOfRandom listOfRandom = new ListOfRandom();
-       // listOfRandom.addPoint();
+        listOfRandom.addPoint();
+        listOfRandom.addPoint();
+        listOfRandom.addPoint();
+
         listOfRandom.showValue();
 
-        System.out.println(RandomPoints.);
+
+        AlgorithmOfGraham graham = new AlgorithmOfGraham();
+
+        graham.algorithmOfGraham(listOfRandom.getPointsList());
 
 
     }
